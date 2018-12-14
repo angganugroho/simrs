@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnBack" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center" >
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar Antrian"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnHome" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home" />
+        </TableRow>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="4dip"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- Start for 1 iTem -->
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rsgm2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"/>
+                
+                <LinearLayout
+                    android:id="@+id/uname_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:layout_marginTop="35dp">
+                    
+                    <TextView
+                        android:id="@+id/username"
+                        android:text="No. RM"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/fld_username"
+                        android:layout_width="245dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="42dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:background="#FFFFFF"
+                        android:hint="Silahkan Memasukkan No Rekam Medis "/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pwd_block"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/uname_block">
+
+                    <TextView
+                        android:id="@+id/pwd"
+                        android:text="Tgl. Lahir"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:paddingLeft="10dp"/>
+
+                    <EditText
+                        android:id="@+id/fld_pwd"
+                        android:hint="silahkan memasukkan tanggal lahir "
+                        android:layout_width="245dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#FFFFFF"
+                        android:inputType="textPassword"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="80dp"
+                    android:layout_below="@+id/pwd_block"/>
+
+                <LinearLayout
+                    android:id="@+id/verify_block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btn_login"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/verify"
+                        android:text="Belum mempunyai No. RM ? Silahkan mendaftar pada bagian pendaftaran di Rumah Sakit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:textColor="@android:color/holo_red_dark"/>
+                </LinearLayout>
+
+
+<!-- end -->
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

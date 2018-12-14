@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@drawable/topbarbg"
+        android:orientation="horizontal" >
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnBack" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR POLI KLINIK RSGM"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="3dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="btnHome" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home" />
+        </TableRow>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_margin="4dip"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- Start for 1 iTem -->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <!-- Add service image here -->
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/rsgm2" />
+
+                        <!-- Add service title here -->
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_gravity="center"
+                        android:background="#C60000"
+                        android:padding="14dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tablelayoutid">
+
+                            <TableRow
+                                android:id="@+id/rowlay"
+                                android:background="#435b4b"
+                                android:padding="5dp">
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    android:text="No" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    android:text="Nama Dokter" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:textColor="#FFFFFF"
+                                    android:textStyle="bold"
+                                    android:text="Hari" />
+                            </TableRow>
+
+                            <TableRow
+                                android:background="#ECEFF1"
+                                android:padding="5dp">
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="1" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="dr. Gigi 1" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Nama Poli 1" />
+                            </TableRow>
+
+                            <TableRow
+                                android:background="#ECEFF1"
+                                android:padding="5dp">
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="2" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="dr. Gigi 2" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Nama Poli 2" />
+                            </TableRow>
+                            <TableRow
+                                android:background="#ECEFF1"
+                                android:padding="5dp">
+                                <TextView
+                                    android:layout_width="40dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:text="3" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="dr. Gigi 3" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Nama Poli 3" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_gravity="center"
+                        android:background="#C60000"
+                        android:padding="14dip"
+                        android:layout_marginTop="10dp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
